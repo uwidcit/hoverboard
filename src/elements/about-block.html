@@ -29,6 +29,9 @@
         display: grid;
         grid-gap: 32px 16px;
         grid-template-columns: repeat(2, 1fr);
+        background-image: url("/images/symposium_diagram.png");
+        background-size: contain;
+        background-repeat: no-repeat;
       }
 
       .numbers {
@@ -70,8 +73,23 @@
 
         <div>
           <h1 class="container-title">{$ aboutBlock.title $}</h1>
-          <p>{$ aboutBlock.callToAction.featuredSessions.description $}</p>
-          <a
+          <!--<p>{$ aboutBlock.callToAction.featuredSessions.description $}</p>-->
+          <p>The Faculty of Science and Technology (FST), St. Augustine Campus presents its 1st Annual FST Week. This week will highlight on-going research in Science, Technology and Innovation (STI) at the Faculty and its contributions to the community. This year’s theme ‘SCIENCE IN COMMUNITIES’ showcases the collaboration amongst departments, the UWI, industry and communities and complements the Faculty’s drive of supporting partnerships, not only in Trinidad and Tobago, but also regionally and internationally.The Science in Communities theme will explore work done at the FST and its contributions in the following key areas:</p>
+          <ul>
+            <li>Climate Change, Disaster Preparedness and Management, Environmental and Earth Sciences</li>
+            <li>Data Application, , Information Technology Management & Security</li>
+            <li>Energy, Fuels, Green Tech, Renewables</li>
+            <li>Health, Safety, Medicine & Medical Technology, Pharmaceuticals, Wellness</li>
+          </ul>
+          <p>FST week will take place from Monday 20th to Friday 24th May, 2019 at the Teaching and Learning Centre (TLC). Activities in this week will consist of:</p>
+          <ul>
+            <li>Research Symposium (Oral, Poster and Video Presentations) </li>
+            <li>Outreach & Career Day</li>
+            <li>Open Days (Booth Displays & Exposition)</li>
+          </ul>
+          <p>Papers highlighting and/or supporting research in these areas are invited. Abstracts, not exceeding 300 words, will be reviewed by a scientific panel and those accepted will be included in the conference proceedings.
+To register as an attendee or participant, please send an email to <a href="mailto:fstweek@sta.uwi.edu">fstweek@sta.uwi.edu</a> and complete the attached registration form.</p>
+          <!--<a
             href="{$ aboutBlock.callToAction.featuredSessions.link $}"
             ga-on="click"
             ga-event-category="video"
@@ -79,14 +97,14 @@
             ga-event-label="about block - {$ aboutBlock.callToAction.featuredSessions.label $}"
             target="_blank"
             rel="noopener noreferrer"
-          >
+          > 
             <paper-button class="animated icon-right">
               <span class="cta-label">{$ aboutBlock.callToAction.featuredSessions.label $}</span>
               <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
             </paper-button>
-          </a>
+          </a>--> 
 
-          <p>{$ aboutBlock.callToAction.howItWas.description $}</p>
+          <!--<p>{$ aboutBlock.callToAction.howItWas.description $}</p>
           <paper-button
             class="animated icon-right"
             on-tap="_playVideo"
@@ -97,12 +115,13 @@
           >
             <span>{$  aboutBlock.callToAction.howItWas.label $}</span>
             <iron-icon icon="hoverboard:arrow-right-circle"></iron-icon>
-          </paper-button>
+          </paper-button>-->
         </div>
 
         <div class="statistics-block">
+          <!--<img src="/images/symposium_diagram.png" style="max-width:100%;max-height:100%"></img>-->
 
-          <div class="item">
+          <!--<div class="item">
             <div class="numbers">{$ aboutBlock.statisticsBlock.attendees.number $}</div>
             <div class="label">{$ aboutBlock.statisticsBlock.attendees.label $}</div>
           </div>
@@ -120,7 +139,7 @@
           <div class="item">
             <div class="numbers">{$ aboutBlock.statisticsBlock.tracks.number $}</div>
             <div class="label">{$ aboutBlock.statisticsBlock.tracks.label $}</div>
-          </div>
+          </div> -->
 
         </div>
       </div>

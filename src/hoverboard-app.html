@@ -146,7 +146,6 @@
 
       <app-drawer id="drawer" slot="drawer" opened="[[ui.isDrawerOpened]]" swipe-open>
         <app-toolbar layout vertical start>
-          <plastic-image class="toolbar-logo" srcset="/images/logo-monochrome.svg" alt="{$ title $}"></plastic-image>
           <h2 class="dates">{$ dates $}</h2>
           <h3 class="location">{$ location.short $}</h3>
         </app-toolbar>
@@ -213,11 +212,6 @@
             data-route="home"
             data-path="pages/home-page.html"
           ></home-page>
-          <blog-page
-            data-route="blog"
-            data-path="pages/blog-page.html"
-            route="[[subroute]]"
-          ></blog-page>
           <schedule-page
             data-route="schedule"
             data-path="pages/schedule-page.html"
@@ -228,15 +222,6 @@
             data-path="pages/speakers-page.html"
             route="[[subroute]]"
           ></speakers-page>
-          <previous-speakers-page
-            data-route="previous-speakers"
-            data-path="pages/previous-speakers-page.html"
-            route="[[subroute]]"
-          ></previous-speakers-page>
-          <team-page
-            data-route="team"
-            data-path="pages/team-page.html"
-          ></team-page>
           <faq-page
             data-route="faq"
             data-path="pages/faq-page.html"
@@ -267,13 +252,6 @@
       with-backdrop="[[viewport.isTabletPlus]]"
       no-cancel-on-outside-click="[[viewport.isPhone]]"
     ></speaker-details>
-
-    <previous-speaker-details
-      opened="[[dialogs.previousSpeaker.isOpened]]"
-      speaker="[[dialogs.previousSpeaker.data]]"
-      with-backdrop="[[viewport.isTabletPlus]]"
-      no-cancel-on-outside-click="[[viewport.isPhone]]"
-    ></previous-speaker-details>
 
     <session-details
       opened="[[dialogs.session.isOpened]]"

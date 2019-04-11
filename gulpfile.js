@@ -216,6 +216,7 @@ gulp.task('deploy', deploy);
 
 gulp.task('serve', gulp.series(compileTemplate, () => {
   browserSync.init({
+    port:8080,
     logPrefix: 'Hoverboard 2',
     notify: false,
     server: {
